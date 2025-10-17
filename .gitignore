@@ -1,0 +1,52 @@
+# Reports and logs
+*_reports/
+*.txt
+*.log
+*.xml
+*.html
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Credentials (never commit these!)
+*.key
+*.pem
+credentials.txt
+passwords.txt
+
+# Metasploit
+.msf4/
+*.rc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
