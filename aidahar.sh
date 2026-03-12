@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #############################################
-# ZHYLAN - Automated Penetration Testing Tool
+# AIDAHAR - Automated Penetration Testing Tool
 # Author: nurlanulyoff
 # Version: 1.0.0
 # Description: Comprehensive automated pentesting framework
@@ -19,21 +19,21 @@ NC='\033[0m' # No Color
 
 # Global variables
 TARGET=""
-REPORT_DIR="$HOME/zhylan_reports"
+REPORT_DIR="$HOME/aidahar_reports"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-REPORT_FILE="$REPORT_DIR/zhylan_report_${TIMESTAMP}.txt"
+REPORT_FILE="$REPORT_DIR/aidahar_report_${TIMESTAMP}.txt"
 
 # Banner
 show_banner() {
     clear
     echo -e "${CYAN}"
     cat << "EOF"
-    ███████╗██╗  ██╗██╗   ██╗██╗      █████╗ ███╗   ██╗
-    ╚══███╔╝██║  ██║╚██╗ ██╔╝██║     ██╔══██╗████╗  ██║
-      ███╔╝ ███████║ ╚████╔╝ ██║     ███████║██╔██╗ ██║
-     ███╔╝  ██╔══██║  ╚██╔╝  ██║     ██╔══██║██║╚██╗██║
-    ███████╗██║  ██║   ██║   ███████╗██║  ██║██║ ╚████║
-    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝
+     █████╗ ██╗██████╗  █████╗ ██╗  ██╗ █████╗ ██████╗ 
+    ██╔══██╗██║██╔══██╗██╔══██╗██║  ██║██╔══██╗██╔══██╗
+    ███████║██║██║  ██║███████║███████║███████║██████╔╝
+    ██╔══██║██║██║  ██║██╔══██║██╔══██║██╔══██║██╔══██╗
+    ██║  ██║██║██████╔╝██║  ██║██║  ██║██║  ██║██║  ██║
+    ╚═╝  ╚═╝╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
 EOF
     echo -e "${NC}"
     echo -e "${YELLOW}    Automated Penetration Testing Framework${NC}"
@@ -104,7 +104,7 @@ install_dependencies() {
 # Initialize report
 init_report() {
     mkdir -p "$REPORT_DIR"
-    echo "ZHYLAN Penetration Testing Report" > "$REPORT_FILE"
+    echo "AIDAHAR Penetration Testing Report" > "$REPORT_FILE"
     echo "Generated: $(date)" >> "$REPORT_FILE"
     echo "Target: $TARGET" >> "$REPORT_FILE"
     echo "========================================" >> "$REPORT_FILE"
@@ -348,7 +348,7 @@ generate_report() {
     
     local summary_file="$REPORT_DIR/summary_${TIMESTAMP}.txt"
     
-    echo "ZHYLAN PENETRATION TEST SUMMARY" > "$summary_file"
+    echo "AIDAHAR PENETRATION TEST SUMMARY" > "$summary_file"
     echo "================================" >> "$summary_file"
     echo "Date: $(date)" >> "$summary_file"
     echo "Target: $TARGET" >> "$summary_file"
@@ -405,7 +405,7 @@ main_menu() {
             8) full_auto_scan ;;
             9) generate_report ;;
             0) 
-                echo -e "${GREEN}[*] Exiting ZHYLAN. Stay ethical!${NC}"
+                echo -e "${GREEN}[*] Exiting AIDAHAR. Stay ethical!${NC}"
                 exit 0
                 ;;
             *)

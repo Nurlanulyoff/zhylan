@@ -1,6 +1,6 @@
-# Contributing to ZHYLAN
+# Contributing to AIDAHAR
 
-Thank you for considering contributing to ZHYLAN! This document provides guidelines for contributing to the project.
+Thank you for considering contributing to AIDAHAR! This document provides guidelines for contributing to the project.
 
 ## Code of Conduct
 
@@ -80,4 +80,4 @@ Before submitting:
 
 Feel free to open an issue for any questions about contributing.
 
-Thank you for helping make ZHYLAN better!
+Thank you for helping make AIDAHAR better!

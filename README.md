@@ -1,10 +1,21 @@
-# ZHYLAN - Automated Penetration Testing Framework
+# AIDAHAR - Automated Penetration Testing Framework
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
 
-**ZHYLAN** is a comprehensive automated penetration testing framework designed for security professionals, ethical hackers, and students learning cybersecurity.
+```
+ █████╗ ██╗██████╗  █████╗ ██╗  ██╗ █████╗ ██████╗ 
+██╔══██╗██║██╔══██╗██╔══██╗██║  ██║██╔══██╗██╔══██╗
+███████║██║██║  ██║███████║███████║███████║██████╔╝
+██╔══██║██║██║  ██║██╔══██║██╔══██║██╔══██║██╔══██╗
+██║  ██║██║██████╔╝██║  ██║██║  ██║██║  ██║██║  ██║
+╚═╝  ╚═╝╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+```
+
+**AIDAHAR** is a comprehensive automated penetration testing framework designed for security professionals, ethical hackers, and students learning cybersecurity.
+
+> **AIDAHAR** (Айдахар) - means "Dragon" in Kazakh language
 
 ## Author
 
@@ -73,27 +84,27 @@
 
 ### Quick Install
 
-\`\`\`bash
+```bash
 # Clone the repository
-git clone https://github.com/nurlanulyoff/zhylan.git
-cd zhylan
+git clone https://github.com/nurlanulyoff/aidahar.git
+cd aidahar
 
 # Make executable
-chmod +x zhylan.sh
+chmod +x aidahar.sh
 
 # Run the installer (optional)
 chmod +x install.sh
 sudo ./install.sh
 
-# Run ZHYLAN
-sudo ./zhylan.sh
-\`\`\`
+# Run AIDAHAR
+sudo ./aidahar.sh
+```
 
 ### Manual Installation
 
 Install required dependencies:
 
-\`\`\`bash
+```bash
 # Debian/Ubuntu/Kali
 sudo apt-get update
 sudo apt-get install -y nmap hydra nikto sqlmap metasploit-framework dirb enum4linux smbclient
@@ -103,22 +114,22 @@ sudo yum install -y nmap hydra nikto sqlmap metasploit dirb samba-client
 
 # Arch Linux
 sudo pacman -S nmap hydra nikto sqlmap metasploit dirb smbclient
-\`\`\`
+```
 
 ## Usage
 
 ### Basic Usage
 
-\`\`\`bash
-sudo ./zhylan.sh
-\`\`\`
+```bash
+sudo ./aidahar.sh
+```
 
 ### Quick Start Guide
 
-1. **Launch ZHYLAN**
-   \`\`\`bash
-   sudo ./zhylan.sh
-   \`\`\`
+1. **Launch AIDAHAR**
+   ```bash
+   sudo ./aidahar.sh
+   ```
 
 2. **Accept Legal Disclaimer**
    - Read and accept the terms of use
@@ -133,21 +144,41 @@ sudo ./zhylan.sh
 
 ### Example Workflow
 
-\`\`\`bash
+```bash
 # Full automated scan
-sudo ./zhylan.sh
+sudo ./aidahar.sh
 # Enter target: 192.168.1.100
 # Select option: 8 (Full Automated Scan)
 
 # Manual testing workflow
-sudo ./zhylan.sh
+sudo ./aidahar.sh
 # 1. Network Reconnaissance
 # 2. Port Scanning (Full scan)
 # 3. Service Enumeration
 # 4. Vulnerability Scanning
 # 6. Brute Force (if credentials needed)
 # 9. Generate Report
-\`\`\`
+```
+
+## Screenshots
+
+### Main Menu
+```
+╔════════════════════════════════════════╗
+║           MAIN MENU                    ║
+╠════════════════════════════════════════╣
+║ 1) Network Reconnaissance              ║
+║ 2) Port Scanning                       ║
+║ 3) Service Enumeration                 ║
+║ 4) Vulnerability Scanning              ║
+║ 5) Web Application Testing             ║
+║ 6) Brute Force Attacks                 ║
+║ 7) Exploitation Module                 ║
+║ 8) Full Automated Scan                 ║
+║ 9) Generate Report                     ║
+║ 0) Exit                                ║
+╚════════════════════════════════════════╝
+```
 
 ## Testing Environment
 
@@ -174,27 +205,27 @@ For safe and legal testing, use these vulnerable machines:
 
 ### Virtual Lab Setup
 
-\`\`\`bash
+```bash
 # Install VirtualBox
 sudo apt-get install virtualbox
 
 # Create network
 # 1. Kali Linux (attacker) - NAT + Host-Only
 # 2. Metasploitable (target) - Host-Only
-# 3. Run ZHYLAN from Kali against Metasploitable
-\`\`\`
+# 3. Run AIDAHAR from Kali against Metasploitable
+```
 
 ## Reports
 
-All scan results are saved in `~/zhylan_reports/` with timestamps:
+All scan results are saved in `~/aidahar_reports/` with timestamps:
 
-\`\`\`
-~/zhylan_reports/
-├── zhylan_report_20250118_143022.txt
+```
+~/aidahar_reports/
+├── aidahar_report_20250118_143022.txt
 ├── full_auto_scan_20250118_143022.txt
 ├── vuln_scan_20250118_143022.txt
 └── summary_20250118_143022.txt
-\`\`\`
+```
 
 ## Legal Disclaimer
 
@@ -202,26 +233,20 @@ All scan results are saved in `~/zhylan_reports/` with timestamps:
 
 This tool is provided for **EDUCATIONAL PURPOSES ONLY** and for **AUTHORIZED SECURITY TESTING**.
 
-- ✅ Use on systems you own
-- ✅ Use on systems with written permission
-- ✅ Use in authorized penetration testing engagements
-- ✅ Use in controlled lab environments
+- Use on systems you own
+- Use on systems with written permission
+- Use in authorized penetration testing engagements
+- Use in controlled lab environments
 
-- ❌ Unauthorized access to computer systems is ILLEGAL
-- ❌ Using this tool without permission may result in criminal charges
-- ❌ The author is NOT responsible for misuse or illegal activities
+- Unauthorized access to computer systems is ILLEGAL
+- Using this tool without permission may result in criminal charges
+- The author is NOT responsible for misuse or illegal activities
 
 **Always obtain explicit written authorization before testing any system.**
 
 ## Contributing
 
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Roadmap
 
@@ -248,13 +273,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For issues, questions, or contributions:
 
-- GitHub Issues: [Report a bug](https://github.com/nurlanulyoff/zhylan/issues)
+- GitHub Issues: [Report a bug](https://github.com/nurlanulyoff/aidahar/issues)
 - Email: nurlanulyoff@example.com
-
-## Disclaimer
-
-The author and contributors are not responsible for any misuse or damage caused by this program. Use responsibly and ethically.
 
 ---
 
-**Made with ❤️ by nurlanulyoff for the cybersecurity community**
+**Made by nurlanulyoff for the cybersecurity community**

@@ -1,5 +1,6 @@
 # Reports and logs
 *_reports/
+aidahar_reports/
 *.txt
 *.log
 *.xml
@@ -25,6 +26,7 @@ Thumbs.db
 *.pem
 credentials.txt
 passwords.txt
+wordlists/
 
 # Metasploit
 .msf4/
