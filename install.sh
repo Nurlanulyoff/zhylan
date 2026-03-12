@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #############################################
-# ZHYLAN Installation Script
+# AIDAHAR Installation Script
 # Author: nurlanulyoff
 #############################################
 
@@ -9,10 +9,11 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
+CYAN='\033[0;36m'
 NC='\033[0m'
 
 echo -e "${BLUE}╔════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║   ZHYLAN Installation Script          ║${NC}"
+echo -e "${BLUE}║   AIDAHAR Installation Script          ║${NC}"
 echo -e "${BLUE}╚════════════════════════════════════════╝${NC}"
 echo ""
 
@@ -31,7 +32,7 @@ else
     exit 1
 fi
 
-echo -e "${GREEN}[✓] Detected OS: $OS${NC}"
+echo -e "${GREEN}[+] Detected OS: $OS${NC}"
 
 # Install dependencies based on OS
 install_deps() {
@@ -62,22 +63,22 @@ install_deps() {
 # Create directories
 setup_dirs() {
     echo -e "${BLUE}[*] Setting up directories...${NC}"
-    mkdir -p ~/zhylan_reports
-    mkdir -p /opt/zhylan
-    chmod 755 /opt/zhylan
-    echo -e "${GREEN}[✓] Directories created${NC}"
+    mkdir -p ~/aidahar_reports
+    mkdir -p /opt/aidahar
+    chmod 755 /opt/aidahar
+    echo -e "${GREEN}[+] Directories created${NC}"
 }
 
 # Copy files
 install_files() {
-    echo -e "${BLUE}[*] Installing ZHYLAN...${NC}"
-    cp zhylan.sh /opt/zhylan/
-    chmod +x /opt/zhylan/zhylan.sh
+    echo -e "${BLUE}[*] Installing AIDAHAR...${NC}"
+    cp aidahar.sh /opt/aidahar/
+    chmod +x /opt/aidahar/aidahar.sh
     
     # Create symlink
-    ln -sf /opt/zhylan/zhylan.sh /usr/local/bin/zhylan
+    ln -sf /opt/aidahar/aidahar.sh /usr/local/bin/aidahar
     
-    echo -e "${GREEN}[✓] ZHYLAN installed to /opt/zhylan/${NC}"
+    echo -e "${GREEN}[+] AIDAHAR installed to /opt/aidahar/${NC}"
 }
 
 # Update Metasploit database
@@ -101,12 +102,12 @@ main() {
     echo -e "${GREEN}║   Installation Complete!               ║${NC}"
     echo -e "${GREEN}╚════════════════════════════════════════╝${NC}"
     echo ""
-    echo -e "${CYAN}Run ZHYLAN with:${NC}"
-    echo -e "${WHITE}  sudo zhylan${NC}"
+    echo -e "${CYAN}Run AIDAHAR with:${NC}"
+    echo -e "${WHITE}  sudo aidahar${NC}"
     echo -e "${WHITE}  or${NC}"
-    echo -e "${WHITE}  sudo /opt/zhylan/zhylan.sh${NC}"
+    echo -e "${WHITE}  sudo /opt/aidahar/aidahar.sh${NC}"
     echo ""
-    echo -e "${YELLOW}Reports will be saved to: ~/zhylan_reports/${NC}"
+    echo -e "${YELLOW}Reports will be saved to: ~/aidahar_reports/${NC}"
     echo ""
 }
 
